@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breath to Being</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for typography and theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* A warm, soft off-white */
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-hero-pattern {
+            /* Adjusted gradient to be stronger and cover more of the left, ensuring text separation */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120&auto=format&fit=crop');
+            /* Reverting to 'cover' (no zoom) and 'right center' (girl on the right) */
+            background-size: auto 115%;
+            background-position: 20% center; 
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header --><header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-wider text-color-switcher">Breath to Being</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-white hover:text-gray-200 text-color-switcher">About</a>
+                <a href="#philosophy" class="text-white hover:text-gray-200 text-color-switcher">Our Philosophy</a>
+                <a href="#me" class="text-white hover:text-gray-200 text-color-switcher">My Story</a>
+                <a href="https://www.instagram.com/mainsonejaarha/" target="_blank" class="bg-white text-gray-800 hover:bg-gray-200 py-2 px-4 rounded-full font-semibold transition-colors duration-300 shadow-md">
+                    Follow on Instagram
+                </a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu --><div id="mobile-menu" class="hidden md:hidden bg-white/90 backdrop-blur-lg">
+            <a href="#about" class="block text-gray-800 text-center py-2 px-4 hover:bg-gray-100">About</a>
+            <a href="#philosophy" class="block text-gray-800 text-center py-2 px-4 hover:bg-gray-100">Our Philosophy</a>
+            <a href="#me" class="block text-gray-800 text-center py-2 px-4 hover:bg-gray-100">My Story</a>
+            <a href="https://www.instagram.com/mainsonejaarha/" target="_blank" class="block text-center bg-teal-600 text-white font-semibold mt-2 mx-4 py-2 px-4 rounded-full hover:bg-teal-700">Follow Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section --><section class="min-h-screen bg-hero-pattern flex items-center text-white p-6 md:px-12 lg:px-24">
+        <div class="max-w-2xl"> <!-- Text container keeps text on the left -->
+            <!-- Font size is smaller as requested -->
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Don't just breathe to live, breathe for being.</h1>
+            <p class="text-lg md:text-xl drop-shadow-md">An invitation to reconnect with the core of your existence: your breath.</p>
+        </div>
+    </section>
+
+    <!-- Main Content --><main class="container mx-auto px-6 py-16 md:py-24 space-y-24">
+
+        <!-- About Breath to Being Section --><section id="about" class="scroll-mt-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold text-gray-800">What is Breath to Being?</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        It's not just an Instagram page, but a passion project dedicated to the art of being. In a world that never stops, we invite you to pause, focus inward, and shift from merely surviving to truly living.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Through mindful yoga asanas and targeted Pranayama (breathwork), we help you fade out the external noise. This isn't just about yoga; it's about exploring your whole, authentic self—celebrating every facet of a busy, beautiful life.
+                    </p>
+                    <p class="font-semibold text-teal-700 text-lg">
+                        Breathe to live, move to feel, and be to grow.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=1974&auto=format&fit=crop" 
+                         alt="Woman practicing yoga in a serene setting" class="rounded-lg shadow-2xl object-cover w-full h-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section (Problem/Solution) --><section id="philosophy" class="scroll-mt-20 bg-teal-50 rounded-xl p-8 md:p-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Our Philosophy</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">We believe wellness isn't an optional add-on, but a way of being. We address the disconnects of modern life by fostering a genuine connection with oneself.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- The Problem Column --><div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-red-500 mb-6 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>
+                        The Disconnect
+                    </h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-3 mt-1">&#8226;</span> Forgetting to pause and feeling disconnected from ourselves.</li>
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-3 mt-1">&#8226;</span> Experiencing high levels of stress, anxiety, and burnout.</li>
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-3 mt-1">&#8226;</span> Treating wellness as a chore, not a joyful part of life.</li>
+                        <li class="flex items-start"><span class="text-red-500 font-bold mr-3 mt-1">&#8226;</span> Believing a yogic lifestyle is restrictive or boring.</li>
+                    </ul>
+                </div>
+                <!-- The Solution Column --><div class="bg-teal-600 text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        The Reconnection
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><span class="font-bold mr-3 mt-1">&#10003;</span> Reconnect to yourself through yoga, pranayama, and mindfulness.</li>
+                        <li class="flex items-start"><span class="font-bold mr-3 mt-1">&#10003;</span> Find calm and genuine enjoyment in your wellness journey.</li>
+                        <li class="flex items-start"><span class="font-bold mr-3 mt-1">&#10003;</span> Learn to savor the simple joys and little things in life.</li>
+                        <li class="flex items-start"><span class="font-bold mr-3 mt-1">&#10003;</span> Discover that mindful living is vibrant, creative, and freeing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section --><section id="me" class="scroll-mt-20">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                     <img src="https://i.pinimg.com/236x/76/01/f5/7601f57a17473be024d6638225cd2d90.jpg" 
+                          alt="Portrait of the website author" class="rounded-lg shadow-2xl object-cover w-full h-[500px]">
+                </div>
+                <div class="md:col-span-3 space-y-6">
+                    <h2 class="text-4xl font-bold text-gray-800">My Story</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Born in a small town surrounded by nature, I moved to the big city with big dreams. The fast-paced corporate life brought success, but left me feeling like something was missing. Yoga, which started as a physical challenge to hold a headstand, quickly became a profound connection to something deeper.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Overwhelmed by corporate pressures, I took a pause—a month in Rishikesh to immerse myself in yoga. That experience changed everything. It wasn't just a workout; it was a way of being. I learned to weave those lessons into my daily life, and that's how Breath to Being was born.
+                    </p>
+                    <blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-700">
+                        "This space is my digital diary. My hope is that as you follow along, something here may also shift in you. Because if there’s one thing my journey has taught me, it’s this: all the answers of the universe lie within you."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Instagram CTA --><section class="bg-gray-100">
+        <div class="container mx-auto px-6 py-16 md:py-20 text-center">
+            <h2 class="text-4xl font-bold text-gray-800">Join the Journey</h2>
+            <p class="text-lg text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">Follow along for daily inspiration on mindful living, yoga, breathwork, creativity, and everything in between.</p>
+            <a href="https://www.instagram.com/mainsonejaarha/" target="_blank" class="inline-block bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold py-4 px-8 rounded-full text-lg hover:scale-105 transform transition-transform duration-300 shadow-xl">
+                <span class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    Follow @mainsonejaarha
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Breath to Being. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">A space for mindful living.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/90', 'backdrop-blur-lg', 'shadow-md');
+                // Adjust text color on scroll for elements that need to change
+                navbar.querySelectorAll('.text-color-switcher').forEach(el => {
+                    el.classList.add('text-gray-800');
+                    el.classList.remove('text-white');
+                });
+                navbar.querySelector('#menu-btn').classList.remove('text-white');
+                navbar.querySelector('#menu-btn').classList.add('text-gray-800');
+            } else {
+                navbar.classList.remove('bg-white/90', 'backdrop-blur-lg', 'shadow-md');
+                 // Revert text color for elements that need to change
+                navbar.querySelectorAll('.text-color-switcher').forEach(el => {
+                    el.classList.remove('text-gray-800');
+                    el.classList.add('text-white');
+                });
+                navbar.querySelector('#menu-btn').classList.add('text-white');
+                navbar.querySelector('#menu-btn').classList.remove('text-gray-800');
+            }
+        };
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
